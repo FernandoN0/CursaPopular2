@@ -17,7 +17,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="../javascript/javascript.js"></script>
-
 	<?php
     function obtenerFechaEnLetra($fecha){
     $dia= conocerDiaSemanaFecha($fecha);
@@ -81,12 +80,12 @@
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header text-center">
-	        <h4 class="modal-title w-100 font-weight-bold">Iniciar sessió</h4>∫
+	        <h4 class="modal-title w-100 font-weight-bold">Iniciar sessió</h4>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>
-	      <form id='login' action='../procesa/login.proc.php' method='post' accept-charset='UTF-8' onsubmit="comprobar();return false">
+	      <form id='login' action='../procesa/login.proc.php' method='post' accept-charset='UTF-8' onsubmit="return comprobar()">
 	      <div class="modal-body mx-3">
 	        <div class="md-form mb-5">
 	          <i class="fas fa-envelope prefix grey-text"></i>
@@ -224,7 +223,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div id="formulario">
-					<form action="../procesa/inscripcion.proc.php" method='post'id="form" autocomplete="off">
+					<form action="../procesa/inscripcion.proc.php" method='post'id="form" autocomplete="off" onsubmit="return validacionInscripcion()">
 						<div class="form-group">
 							<input type="text" class="form-control form-text" id="nombre"  name="nompart"placeholder="Nom">
 						</div>
@@ -237,16 +236,16 @@
 						<div class="md-form">
 						<div class="form-group date">
 							<label for="date">Data de naixement</label>
-							<input class="form-control" type="date" id="fecha-nacimiento" name="edpart">
+							<input class="form-control" type="date" id="fechanacimiento" name="edpart">
 						</div>
 						<div id="sexo">
-		                    <select name="separt" class="opt">
-		                        <option disabled="disabled" selected="selected">Sexe</option>
+		                    <select name="separt" class="opt" id="sexe">
+		                        <option disabled="disabled" selected="selected" value="">Sexe</option>
 		                        <option value="h">Home</option>
 		                        <option value="m">Dona</option>
 		                    </select>
-		                    <select name="discpart" class="opt">
-	                            <option disabled="disabled" selected="selected">Discapacitat
+		                    <select name="discpart" class="opt" id="discap">
+	                            <option disabled="disabled" selected="selected" value="">Discapacitat
 	                            </option>
 	                            <option>Si</option>
 	                            <option>No</option>

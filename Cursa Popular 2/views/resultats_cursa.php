@@ -16,6 +16,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../javascript/javascript.js"></script>
 </head>
 <body>
 	<!---HEADER SUPERIOR CON INFORMACION BASICA--->
@@ -56,7 +57,7 @@
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>
-	      <form id='login' action='../procesa/login.proc.php' method='post' accept-charset='UTF-8'>
+	      <form id='login' action='../procesa/login.proc.php' method='post' accept-charset='UTF-8' onsubmit="return comprobar()">
 	      <div class="modal-body mx-3">
 	        <div class="md-form mb-5">
 	          <i class="fas fa-envelope prefix grey-text"></i>
