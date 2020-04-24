@@ -1,0 +1,402 @@
+/*MENU*/
+.content-menu {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    width: 100% !important;
+}
+
+.bg-dark {
+	background-color: #3C3D41;
+	border-bottom: 2px solid #507ADE;
+}
+
+ul.navbar-nav.mr-auto.mt-2.mt-lg-0 {
+    align-items: center;
+}
+
+@media(max-width: 991px) {
+	ul.navbar-nav.mr-auto.mt-2.mt-lg-0 {
+	    padding-top: 30px;
+	}
+}
+
+.btn-login {
+	text-decoration: none;
+	position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+.btn-login > .login {
+	padding: 0.70rem;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #507ADE;
+}
+
+.btn-login > .login:hover {
+	background-color: #39559a;
+	transition: 0.2s;
+}
+
+.nav-item {
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 0px !important;
+    font-family: Montserrat;
+
+}
+
+.nav-item:hover {
+	text-decoration: none;
+	color: white;
+	outline: 1px dashed white;
+    outline-offset: 0.4rem;
+    transition: 0.3s;
+}
+
+.txt-login {
+	font-size: 1rem;
+}
+
+	@media(max-width: 991px) {
+		.btn-login {
+			position: relative;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+		.nav-opt {
+			margin-left: 0;
+			margin-bottom: 30px;
+		}
+		.nav-item {
+			margin-left: 0;
+		}
+		.nav-opt-1 {
+			margin-top: 40px;
+		}
+	}
+
+/*BODY PANEL*/
+
+.recuadros {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.recuadro_left-admin{
+	width: 300px;
+
+	background-image: url(../img/panel_izquierdo.jpg);
+
+	background-image: no-repeat;
+	background-image: fixed;
+	background-image: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.recuadro_center-admin{
+	width: 300px;
+	padding-top: 0px;
+	margin-left: 48px;
+	margin-right: 40px;
+
+	background-image: url(../img/panel_centro.jpg);
+
+	background-image: no-repeat;
+	background-image: fixed;
+	background-image: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+.recuadro_cat-admin{
+	width: 300px;
+	padding-top: 0px;
+	margin-left: 43px;
+	margin-right: 40px;
+
+	background-image: url(../img/recuadro_categoria.jpg);
+
+	background-image: no-repeat;
+	background-image: fixed;
+	background-image: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+
+.recuadro_right-admin{
+	width: 300px;
+	padding-top: 0px;
+	margin: 10px;
+	border: 3px solid;
+	border-color: #3C3D41;
+	color: #3C3D41;
+
+	background-image: url(../img/panel_derecho.jpg);
+
+	background-image: no-repeat;
+	background-image: fixed;
+	background-image: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@media(max-width: 773px) {
+
+	.titulo-panel{
+		padding-top: 10%;
+		font-family: lato;
+		margin-top: 10vh;
+	}
+
+	.recuadros{
+		display: block;
+	}
+
+	.recuadro_right-admin{
+		width: 100%;
+		margin: 0;
+		margin-top: 40px;
+	}
+
+	.recuadro_center-admin{
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 40px;
+	}
+
+	.recuadro_left-admin{
+		width: 100%;
+	}
+}
+
+.hvr-admin {
+    cursor: pointer;
+    border: 3px solid;
+	border-color: #3C3D41;
+	color: #EDEDED;
+	height: 300px;
+	text-align: center;
+	line-height: 240px;
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.hvr-admin:hover{
+	-webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+
+}
+
+.hvr-contact-admin:hover{
+	-webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.contenido-admin{
+	background-color: #EDEDED;
+	height: auto;
+	padding: 5%;
+}
+
+.boton-admin-left{
+	width: 100%;
+	height: 100%;
+	border: 0;
+	color: #3C3D41;
+}
+
+.boton-admin-center{
+	width: 100%;
+	height: 100%;
+	border: 0;
+	color: #3C3D41;
+}
+
+.boton-admin-right{
+	width: 100%;
+	height: 100%;
+	border: 0;
+	color: #3C3D41;
+}
+
+.modaladministracion{
+	width: 900px;
+	height: auto;
+	padding-bottom: 20PX;
+}
+
+.btn-primary {
+	background-color: transparent;
+	border: 0;
+	width: 100%;
+	height: 294px;
+	font-size: 25px;
+}
+
+.titulo-panel{
+	background-color: #EDEDED;
+	text-align: center;
+}
+
+.body-admin{
+	background-color: #EDEDED;
+}
+
+/*TABLAS DE MODALS*/
+.tablaclasi {
+	text-align: center;
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 2%;
+	margin-top: 3%;
+}
+
+.trtop{
+	background-color: rgb(255, 168, 168, 0.2);
+	padding-top: 4%;
+	height: 50px;
+}
+
+.thtop{
+	padding-left: 15%;
+}
+
+/*FOOTER*/
+.footer {
+	position: absolute;
+	height: auto;
+	background-color: #3C3D41;
+	bottom: 0;
+}
+
+@media(max-width: 774px) {
+	.footer {
+		position: relative;
+	}
+}
+
+.footer > .row {
+	padding: 22px;
+	justify-content: center;
+    align-items: center;
+}
+
+.footer > .row > .borde {
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+
+@media(max-width: 1150px) {
+	.footer > .row > .borde {
+	border: none;
+	}
+}
+
+.footer > .row > .col-md-4 {
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 100px;
+}
+
+#social {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#social > i {
+	margin-left: 20px;
+	color: white;
+}
+
+.txt-footer {
+	font-size: 0.80rem;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titulo-footer {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*##########################*/
+/*Formulario editar datos*/
+
+.formulario_modificar{
+	text-align: center;
+}
+
+.formulario_modificar > .editform {
+	justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.formulario_modificar > .editform > .formularioedit > label {
+	font-family: Montserrat;
+}
+
+.formulario_modificar > .editform > .formularioedit > input {
+	width: 60%;
+    border: none;
+    border-bottom: 1px solid #507ADE;
+}
+
+.formulario_modificar > .editform > .formularioedit > input:focus {
+	outline: -webkit-focus-ring-color auto 0;
+}
+
+.formulario_modificar > .editform > .formularioedit > select {
+	margin-bottom: 20px;
+	width: 60%;
+}
+
+.formulario_modificar > .editform > .formularioedit > input[type="submit"] {
+    background-color: #507ADE;
+    color: white;
+}
+
+.formulario_modificar > .editform > .formularioedit > input[type="submit"]:hover {
+    background-color: #39559a;
+    color: white;
+    transition: 0.2s;
+}
